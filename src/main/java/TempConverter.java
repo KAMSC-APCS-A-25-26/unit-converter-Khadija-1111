@@ -14,37 +14,36 @@ public class TempConverter {
         while (running)
         {
             System.out.println("\n");
-            System.out.println("---Temperature Conversion Menu---");
+            System.out.println("Choose conversion direction:");
             System.out.println("1. Convert Fahrenheit to Celsius");
             System.out.println("2. Convert Celsius to Fahrenheit");
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
-
-
             switch(choice)
             {
                 case 1:
-                    System.out.print("Enter temperature in Fahrenheit: ");
+                    System.out.print("\nEnter temperature in Fahrenheit: ");
                     double F1 = sc.nextDouble();
-                    double C1 = (F1 - 32) * 5/9;
+                    double C1 = (F1 - 32) * (5/9);
+                    System.out.println("\nConversion Results:");
                     System.out.println("Fahrenheit: " + F1);
                     System.out.println("Celsius: " + C1);
                     break;
                 case 2:
-                    System.out.print("Enter temperature in Celsius: ");
+                    System.out.print("\nEnter temperature in Celsius: ");
                     double C2 = sc.nextDouble();
-                    double F2 = C2 * (9/5) + 32;
+                    double F2 = C2 * 9/5 + 32;
+                    System.out.println("\nConversion Results:");
                     System.out.println("Celsius: " + C2);
                     System.out.println("Fahrenheit: " + F2);
                     break;
                 case 3:
                     System.out.println("Goodbye!");
                     running = false;
-
-
-
-
+                    break;
+                default:
+                    System.out.println("Invalid menu choice.");
             }
         }
     }
