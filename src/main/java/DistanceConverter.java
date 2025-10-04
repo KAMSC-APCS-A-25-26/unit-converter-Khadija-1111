@@ -32,8 +32,8 @@ public class DistanceConverter {
                     }
                     else {
                         System.out.println("\nConversion result:");
-                        System.out.printf("Miles: %.2f\n", miles1);
-                        System.out.printf("Kilometers: %.2f\n", kilometers1);
+                        System.out.printf("Miles: %.5f\n", miles1);
+                        System.out.printf("Kilometers: %.5f\n", kilometers1);
                     }
                     break;
                 case 2:
@@ -45,8 +45,8 @@ public class DistanceConverter {
                     }
                     else {
                         System.out.println("\nConversion result:");
-                        System.out.printf("Kilometers: %.2f\n", kilometers2);
-                        System.out.printf("Miles: %.2f\n", miles2);
+                        System.out.printf("Kilometers: %.5f\n", kilometers2);
+                        System.out.printf("Miles: %.5f\n", miles2);
                     }
                     break;
                 case 3:
